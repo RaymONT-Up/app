@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  transition: color, 0.3s;
+  &:hover {
+    color: $mane;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  position: relative;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  color: $dark;
+  &--2 {
+    color: $mane;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    height: 100%;
+    width: 3px;
+    background-color: $mane;
+  }
+}
